@@ -4,6 +4,8 @@
     --color--secondary-dark-cyan: hsl(192, 100%, 9%);
     --color--secondary-grayish-blue: hsl(208, 11%, 55%);
 
+    --color--header-button: white;
+
     --font-size-default: 18px;
 
     --font-headings-family:"Poppins";
@@ -23,11 +25,21 @@ h1, h2, h3 {
     font-family: var(--font-headings-family);
 }
 
-h1
+h1{
+    font-size: 2.5rem;
+}
 
 body {
     font-family: var(--font-body-family);
     font-size: var(--font-size-default);
+}
+
+button{
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 3rem;
+    border:none;
+    border-radius: 5rem;
 }
 
 .flex-row{
@@ -38,6 +50,11 @@ body {
 .flex-col{
     display:flex;
     flex-direction: column;
+}
+
+.align-center{
+    display:flex;
+    align-items: center;
 }
 
 .flex-between{
@@ -56,19 +73,29 @@ button.pink{
 }
 
 header{
-    padding: 1rem 2rem;
+    width: 100% !important;
+    padding: 2rem 4rem;
     background-color: var(--color--secondary-pale-cyan);
     background-image: url("images/bg-hero-desktop.svg");
     gap:3rem
 }
 
 section#community{
+    width:35%;
+    height:100%;
     gap:1rem;
-    align-items: center;
 }
 
+header .image-wrapper.logo-wrapper{
+    width: 200px;
+}
 header .image-wrapper{
-    width: 50%;
+    width: 55%;
+}
+
+header button#try{
+    background-color: white;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 footer{
