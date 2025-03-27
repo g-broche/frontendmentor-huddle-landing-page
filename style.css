@@ -1,0 +1,118 @@
+:root{
+    --color--primary-pink: hsl(322, 100%, 66%);
+    --color--secondary-pale-cyan: hsl(193, 100%, 96%);
+    --color--secondary-dark-cyan: hsl(192, 100%, 9%);
+    --color--secondary-grayish-blue: hsl(208, 11%, 55%);
+
+    --font-size-default: 18px;
+
+    --font-headings-family:"Poppins";
+    --font-headings-weight:600;
+    --font-body-family:"Open Sans";
+    --font-body-weight-normal:400;
+    --font-body-weight-bold:700;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-headings-family);
+}
+
+h1
+
+body {
+    font-family: var(--font-body-family);
+    font-size: var(--font-size-default);
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-between{
+    display:flex;
+    justify-content: space-between;
+}
+
+.image-wrapper img{
+    object-fit: cover;
+    width:100%
+}
+
+button.pink{
+    color:var(--color--secondary-pale-cyan);
+    background-color: var(--color--primary-pink);
+}
+
+header{
+    padding: 1rem 2rem;
+    background-color: var(--color--secondary-pale-cyan);
+    background-image: url("images/bg-hero-desktop.svg");
+    gap:3rem
+}
+
+section#community{
+    gap:1rem;
+    align-items: center;
+}
+
+header .image-wrapper{
+    width: 50%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:hsl(192, 100%, 9%);
+    color: white;
+    height: 200px;
+   
+    padding: 50px;
+  
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.flex-col-icone{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flex-col-1{
+    width: 30%;
+    height: 100%;
+}
+
+.flex-col{
+    width: 20%;
+    height: 100%;
+   
+}
+
+.image-footer img{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.image-footer{
+    width: 20%;
+}
