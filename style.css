@@ -35,6 +35,10 @@ h1{
     font-size: 2.5rem;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 button{
     height: fit-content;
     width: fit-content;
@@ -108,13 +112,15 @@ main{
     display: flex;
     flex-direction: column;
     gap:2rem;
-    padding: calc(var(--body-horizontal-padding) * 2) var(--body-horizontal-padding) calc(var(--body-horizontal-padding) * 4);
+    padding: calc(var(--body-horizontal-padding) * 1.5) var(--body-horizontal-padding) calc(var(--body-horizontal-padding) * 3);
 }
 
 main>div{
-    padding: 2rem 1rem 2rem 4rem;
+    padding: 2rem 1rem 2rem 5rem;
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 main>div:nth-child(even)>.description{
     order:2;
@@ -123,8 +129,16 @@ main>div:nth-child(even)>.image-wrapper{
     order:1;
 }
 main>div>.description{
-    width:60%
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
 }
+main>div>.description p{
+    color:var(--color--secondary-grayish-blue)
+}
+
 main>div>.image-wrapper{
     width:35%
 }
