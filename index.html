@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
@@ -15,15 +15,15 @@
   </style>
 </head>
 <body>
-  <header>
-    <div>
+  <header class="flex-col">
+    <div class="flex-row flex-between">
       <div class="image-wrapper">
         <img src="images/logo.svg" alt="logo huddle">
       </div>
-      Try It Free
+      <button>Try It Free</button>
     </div>
-    <div class="flex-row">
-      <section id="community">
+    <div class="flex-row flew-between">
+      <section id="community flex-col">
         <h1>
           Build The Community Your Fans Will Love
         </h1>
@@ -31,9 +31,7 @@
           Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
           Create connections with your users as you engage in genuine discussion. 
         </p>
-        <button>
-          Get Started For Free
-        </button>
+        <button class="pink">Get Started For Free</button>
       </section>
       <div class="image-wrapper">
         <img src="images/illustration-mockups.svg" alt="image mockups">
@@ -89,7 +87,7 @@
     <h2>
       Ready To Build Your Community?
     </h2>
-    <button>Get Started For Free</button>
+    <button class="pink">Get Started For Free</button>
   </div>
   <footer>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
