@@ -14,6 +14,8 @@
     --font-body-family:"Open Sans";
     --font-body-weight-normal:400;
     --font-body-weight-bold:700;
+
+    --body-horizontal-padding: 5rem;
 }
 
 *{
@@ -31,6 +33,10 @@ h1, h2, h3 {
 
 h1{
     font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.75rem;
 }
 
 button{
@@ -69,6 +75,7 @@ button{
 button.pink{
     color:var(--color--secondary-pale-cyan);
     background-color: var(--color--primary-pink);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 button.pink:hover{
@@ -100,6 +107,58 @@ header button#try{
     background-color: white;
     font-weight: var(--font-body-weight-bold);
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: calc(var(--body-horizontal-padding) * 1.5) var(--body-horizontal-padding) calc(var(--body-horizontal-padding) * 3);
+}
+
+main>div:not(#popup-div){
+    padding: 2rem 1rem 2rem 5rem;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+main>div:not(#popup-div):nth-child(even)>.description{
+    order:2;
+}
+main>div:not(#popup-div):nth-child(even)>.image-wrapper{
+    order:1;
+}
+main>div:not(#popup-div)>.description{
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+main>div:not(#popup-div)>.description p{
+    color:var(--color--secondary-grayish-blue)
+}
+
+main>div:not(#popup-div)>.image-wrapper{
+    width:40%
+}
+
+#popup-div{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%, 33%);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    border-radius: .5rem;
 }
 
 footer{
